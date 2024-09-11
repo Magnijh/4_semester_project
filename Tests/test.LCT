@@ -1,0 +1,263 @@
+function calcTestFunc()
+    var i
+
+    output("--------------- addition ---------------")
+    output("103.4 + 10144 = " + (103.4 + 10144) + " Result Should be: 10247.4")
+    output("521 + -123 = " + (521 + -123) + " Result Should be: 398")
+    output("22 + -5.1 = " + (22 + -5.1) + " Result Should be: 16.9")
+    output("-5 + 22.6 = " + (-5 + 22.6) + " Result Should be: 17.6")
+    output("Hello  " + "+" + "  World!" + " = " + ("Hello" + " World!") + " Result Should be: Hello World!")
+    output("Hello  " + "+" + "  2" + " = " + ("Hello " + 2) + " Result Should be: Hello 2")
+    //output("true + true = " + " Result Should be: Only strings and numbers can be added")
+    //output(true + true)
+
+    output("--------------- subtraction ---------------")
+    output("579 - 246 = " + (579 - 246) + " Result Should be: 333")
+    output("475.7 - -925 = " + (475.7 - -925) + " Result Should be: 1400.7")
+    output("-219 - -87.4 = " + (-219 - -87.4) + " Result Should be: -131.6")
+    output("-879.6 - 66.1 = " + (-879.6 - 66.1) + " Result Should be: -945.7")
+    //output("Hello - World! = " + " Result Should be: Only numbers can be subtracted")
+    //output("Hello" - "World!")
+
+    output("--------------- multiplication ---------------")
+    output("742 * 32 = " + (742 * 32) + " Result Should be: 23744")
+    output("-148 * -67 = " + (-148 * -67) + " Result Should be: 9916")
+    output("54 * -5.5 = " + (54 * -5.5) + " Result Should be: -297")
+    output("-7.1 * 80.4 = " + (-7.1 * 80.4) + " Result Should be: -570.84")
+    //output("true * false = " + " Result Should be: Only numbers can be be used for multiplicative expressions")
+    //output(true * false)
+
+    output("--------------- division ---------------")
+    output("150 / 29 = " + (150 / 29) + " Result Should be: 5.1724137931")
+    output("-719 / -42 = " + (-719 / -42) + " Result Should be: 17.119047619")
+    output("15 / -4.3 = " + (15 / -4.3) + " Result Should be: -3.48837209302")
+    output("-95.3 / -59 = " + (-95.3 / -59) + " Result Should be: 1.61525423729")
+
+    //output("true / false"  + " Result Should be: Only numbers can be be used for multiplicative expressions")
+    //output(true / false)
+    //output("Hello / World!" + " Result Should be: Only numbers can be be used for multiplicative expressions")
+    //output("Hello" / "World!")
+
+    output("--------------- zero division ---------------")
+    output("0 / 5 = " + (0 / 5) + " Result Should be: 0")
+    output("22 / 0 = " +  " Result Should be: Undefined")
+    //output(22 / 0)
+
+    output("--------------- increment ---------------")
+    i = 0
+
+    output("i++ Called 25 times on i = 0")
+    loop 25 times
+        output(i++)
+    end
+    output("Result Should be: String of 1 to 25")
+    //output("--5+2 Result Should be: Only variables can be incremented")
+    //output(--5+2)
+
+    i = 0
+    output("++i Called 25 times on i = 0")
+       loop 25 times
+           output(++i)
+       end
+    output("Result Should be: String of 1 to 25")
+
+    output("--------------- decrement ---------------")
+    i = 25
+    output("i-- Called 25 times on i = 25")
+    loop 25 times
+        output(i--)
+    end
+    output("Result Should be: String of 24 to 0")
+    i = 25
+    output("--i Called 25 times on i = 0")
+       loop 25 times
+           output(--i)
+       end
+    output("Result Should be: String of 24 to 0")
+
+
+    output("--------------- unary ---------------")
+    var x = 25
+    output("-(23^2) = " + -(23^2) + " Result Should be: -529")
+    output("-(5+4.3)) = " + -(5+4.3) + " Result Should be: -9.3")
+    output("-x, x is set to 25 = " + (-x) + " Result Should be: -25")
+    //output("-true =      Result Should be: Only numbers can be used with unary expression")
+    //output(-true)
+
+    output("--------------- power ---------------")
+    output("23^2 = " + (23^2) + " Result Should be: 529")
+    output("2^6 = " + (2^6) + " Result Should be: 64")
+    output("512^12 = " + (512^12) + " Result Should be: 3.2451855e+32")
+    output("-3^2 = " + (-3^2) + " Result Should be: -9")
+    output("(-3)^2 = " + ((-3)^2) + " Result Should be: 9")
+    output("12^-2 = " + (12^-2) + " Result Should be: 0.00694444444")
+    //output("true^2 =      Result Should be: Only numbers can be used with ^")
+    //output(true^2)
+
+    output("--------------- Modulo ---------------")
+    output("26 % 5 = " + (26 % 5) + " Result Should be: 1")
+    output("66 % 7 = " + (66 % 7) + " Result Should be: 3")
+    output("7563 % 213 = " + (7563 % 213) + " Result Should be: 108")
+    output("21.9 % 453 = " + (21 % 453) + " Result Should be: 21.9")
+
+    //output("Hello % World! = " + " Result Should be: Only boolean expressions can be used with % expression")
+    //output("Hello" % "World!")
+
+    output("--------------- Sqrt ---------------")
+    output("sqrt(67) = " + sqrt(67) + " Result Should be: 8.18535277187")
+    output("sqrt(9) = " + sqrt(9) + " Result Should be: 3")
+    output("sqrt(3568) = " + sqrt(3568) + " Result Should be: 59.7327380923")
+    output("sqrt(456.7) = " + sqrt(456.7) + " Result Should be: 21.5800834104")
+
+    //output("sqrt(Hello) = " + " Result Should be: Only boolean expressions can be used with the sqrt expression")
+    //output(sqrt("Hello"))
+
+    output("--------------- Not ---------------")
+    output("!true = " + (!true) + " Result Should be: false")
+    output("!false = " + (!false) + " Result Should be: true")
+
+    //output("!Hello = " + " Result Should be: Only boolean expressions can be used with ! expression")
+    //output(!"Hello")
+
+    output("--------------- relational ---------------")
+    output("12 < 124 = " + (12 < 124) + " Result Should be: true")
+    output("12 > 124 = " + (12 > 124) + " Result Should be: false")
+    output("x = 25, x < 25 = " + (x < 25) + " Result Should be: false")
+
+    output("x = 25, x <= 25 = " + (x <= 25) + " Result Should be: true")
+    output("912 <= 345 = " + (912 <= 345) + " Result Should be: false")
+    output("23 <= 82 =  " + (23 <= 82) + " Result Should be: true")
+
+    output("561 >= 478 = " + (561 >= 478) + " Result Should be: true")
+    output("12 >= 679 = " + (12 >= 679) + " Result Should be: false")
+    output("56 >= 56 = " + (56 >= 56) + " Result Should be: true")
+    //output("Hello <= World! =      Result Should be: Only numbers can be used with relational expressions")
+    //output("Hello" <= "World!")
+
+    output("--------------- equal ---------------")
+    output("56 == 56 = " + (56 == 56) + " Result Should be: true")
+    output("78 == 10 = " + (78 == 10) + " Result Should be: false")
+    output("x = 25, x == 25 = " + (x == 25) + " Result Should be: true")
+    output("x = 25, (x < 10) == false = " + ((x < 10) == false) + " Result Should be: true")
+    output("x = 25, x != 25 = " + (x != 25) + " Result Should be: false")
+    output("x = 25, x == x = " + (x == x) + " Result Should be: true")
+    output("Hello == World! = " + ("Hello" == "World!") + " Result Should be: false")
+    output("Hello != World! = " + ("Hello" != "World!") + " Result Should be: true")
+    output("Hello == Hello = " + ("Hello" == "Hello") + " Result Should be: true")
+    output("true != false = " + (true != false) + " Result Should be: true")
+    output("true == false = " + (true == false) + " Result Should be: false")
+    output("true == true = " + (true == true) + " Result Should be: true")
+    output("5 + 2 == 7 = " + (5 + 2 == 7) + " Result Should be: true")
+    output("5 + 2 != 7 = " + (5 + 2 != 7) + " Result Should be: false")
+    output("7 == 5 + 2 = " + (7 == 5 + 2) + " Result Should be: true")
+    output("7 != 5 + 2  = " + (7 != 5 + 2) + " Result Should be: false")
+
+    output("--------------- and ---------------")
+    output("true and true = " + (true AND true) + " Result Should be: true")
+    output("true and false = " + (true AND false) + " Result Should be: false")
+    output("false and true = " + (false AND true) + " Result Should be: false")
+    output("false and false = " + (false AND false) + " Result Should be: false")
+    //output("5 and 6! =      Result Should be: Only boolean expressions can be used with AND")
+    //output(5 AND 6)
+
+    output("--------------- or ---------------")
+    output("true or true = " + (true OR true) + " Result Should be: true")
+    output("true or false = " + (true OR false) + " Result Should be: true")
+    output("false or true = " + (false OR true) + " Result Should be: true")
+    output("false or false = " + (false OR false) + " Result Should be: false")
+    //output("1553 and 586 =      Result Should be: Only boolean expressions can be used with OR")
+    //output(1553 AND 586)
+
+    output("--------------- Intersection ---------------")
+    output("Intersection between y=2*x+9 and y=3*x+7")
+    output(intersection("y=2*x+9","y=3*x+7"))
+    output("Result Should be: (2, 13)")
+    output("Intersection between y=3*x+2 and y=2*x-1")
+    output(intersection("y=3*x+2","y=2*x-1"))
+    output("Result Should be: (-3, -7)")
+    output("Intersection between y=3*x+9 and y=3*x+7")
+    output(intersection("y=3*x+9","y=3*x+7"))
+    output("Result Should be: The lines are parallel and therefore don't intersect")
+
+    /*
+    output("Intersection between 359 and 29374895")
+    output("Result Should be: Intersection only accepts equations in string format")
+    intersection(359,29374895)
+    */
+
+    output("--------------- Solve ---------------")
+    output("Solve for x in x+5+3==x*5-3")
+    solve("x+5+3==x*5-3") for x
+    output("Result Should be: x = 2.75")
+    output("Solve for x in x+5+3==x*5-3*y")
+    solve("x+5+3==x*5-3*y") for x
+    output("Result Should be: x = 0.75y + 2")
+    /*
+    output("Solve for x in x^2+x+5==x^2+x+15")
+    solve("x^2+x+5==x^2+x+15") for x
+    output("Result Should be: 0 = 50")
+    */
+end
+
+function integrationTest()
+    var test1 = 5
+    output("----- Test Case 1 -----")
+    output(test1)
+
+    var test2 = "Hello"
+    var test3 = " World!"
+    output(test2 + test3)
+
+    var test4 = true
+    output("----- Test Case 3 -----")
+    output("var test4 = true")
+    output("if test4 then")
+    output("    output(It works)")
+    output("end")
+    if (test4) then
+        output("It works")
+    end
+
+    var test5 = 2 / 4
+    output("----- Test Case 4 -----")
+    output("var test5 = 2 / 4")
+    output("output(test5)")
+    output(test5)
+
+    var test6 = 5 + 3 * 9
+    output("----- Test Case 5 -----")
+    output("var test6 = 5 + 3 * 9")
+    output("output(test6)")
+    output(test6)
+
+    var test7 = testCase6()
+    output("----- Test Case 6 -----")
+    output("function testCase6()")
+    output("    return(5 + 3 * 9)")
+    output("end")
+    output("var test7 = testCase6()")
+    output("output(test7)")
+    output(test7)
+
+    output("----- Test Case 7 -----")
+    output("var i = 0")
+    output("    output(i++)")
+    output("end")
+    var i = 0
+    loop 10 times
+        output(i++)
+    end
+
+    output("----- Test Case 8 -----")
+
+
+end
+
+function testCase6()
+    return(5 + 3 * 9)
+end
+
+integrationTest()
+calcTestFunc()
+
+
